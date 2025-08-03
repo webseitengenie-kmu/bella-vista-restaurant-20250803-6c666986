@@ -1,0 +1,131 @@
+[
+  {
+    "sectionId": "hero",
+    "type": "split-content",
+    "headline": "Benvenuti in famiglia – Wo Italien zu Hause ist",
+    "subheadline": "Seit drei Generationen verwöhnen wir Sie mit authentischen Familienrezepten und der Herzlichkeit Italiens",
+    "content": {
+      "items": [
+        {
+          "title": "Tradizione di famiglia",
+          "description": "Unsere Nonna Maria brachte 1952 ihre geheimen Rezepte aus der Toskana mit nach Deutschland. Heute kochen wir noch immer nach ihren handgeschriebenen Notizen – mit Liebe, Leidenschaft und den besten regionalen Zutaten.",
+          "icon": "🇮🇹"
+        },
+        {
+          "title": "Ihr Platz am Familientisch",
+          "description": "In unserem gemütlichen Restaurant mit authentischem italienischen Flair erleben Sie mehr als nur ein Dinner – Sie werden Teil unserer großen italienischen Familie und genießen Momente, die das Herz berühren.",
+          "icon": "❤️"
+        }
+      ]
+    },
+    "cta": {
+      "text": "Tisch reservieren",
+      "action": "book-now"
+    }
+  },
+  {
+    "sectionId": "services",
+    "type": "grid",
+    "headline": "Unsere Spezialitäten – Italienische Leidenschaft auf dem Teller",
+    "subheadline": "Entdecken Sie die kulinarischen Schätze unserer Familie: Von handgemachter Pasta bis hin zu verführerischen Dolci – jedes Gericht erzählt eine Geschichte aus drei Generationen italienischer Kochkunst.",
+    "content": {
+      "items": [
+        {
+          "title": "Hausgemachte Pasta",
+          "description": "Täglich frisch zubereitete Pasta nach Nonnas geheimen Familienrezepten – von cremiger Carbonara bis zur würzigen Arrabbiata.",
+          "icon": "🍝"
+        },
+        {
+          "title": "Steinofen-Pizza",
+          "description": "Knuspriger Teig aus 48-Stunden-Fermentation, belegt mit italienischen Zutaten und gebacken bei 450°C im traditionellen Steinofen.",
+          "icon": "🍕"
+        },
+        {
+          "title": "Erlesene Weine",
+          "description": "Handverlesene italienische Weine von kleinen Familienbetrieben – perfekt abgestimmt auf unsere Gerichte für unvergessliche Geschmackserlebnisse.",
+          "icon": "🍷"
+        },
+        {
+          "title": "Dolci & Desserts",
+          "description": "Verführerische Süßspeisen wie cremiges Tiramisu und sizilianische Cannoli – der perfekte Abschluss für Ihren kulinarischen Italienurlaub.",
+          "icon": "🍰"
+        },
+        {
+          "title": "Event-Catering",
+          "description": "Bringen Sie Italien zu Ihrem Event: Authentische Buffets und Menüs für Firmenevents, Hochzeiten und private Feiern.",
+          "icon": "🎉"
+        }
+      ]
+    },
+    "cta": {
+      "text": "Jetzt reservieren",
+      "action": "book-now"
+    }
+  },
+  {
+    "sectionId": "about",
+    "type": "split-content-timeline",
+    "headline": "Drei Generationen italienische Leidenschaft",
+    "subheadline": "Seit 1952 verwöhnen wir Sie mit authentischen Familienrezepten und der Herzlichkeit Italiens - mitten in Deutschland",
+    "content": {
+      "items": [
+        {
+          "title": "1952 - Der Traum beginnt",
+          "description": "Nonno Giuseppe verlässt seine Heimat in der Toskana und bringt die Geheimnisse seiner famiglia nach Deutschland. Mit nur einer Handvoll Goldmünzen und den wertvollsten Familienrezepten im Gepäck eröffnet er das erste Bella Vista.",
+          "icon": "📅"
+        },
+        {
+          "title": "1978 - Die Tradition wächst",
+          "description": "Papà Marco übernimmt das Restaurant und erweitert es um die berühmte Steinofenpizza. Die Gäste lieben nicht nur das Essen, sondern die warme Atmosphäre, in der sich jeder wie Familie fühlt.",
+          "icon": "🍕"
+        },
+        {
+          "title": "Heute - Moderne trifft Tradition",
+          "description": "Wir, die dritte Generation, führen das Erbe fort: Täglich frische Pasta, sorgfältig ausgewählte regionale Zutaten und die italienische Gastfreundschaft, die unsere Gäste seit über 70 Jahren verzaubert.",
+          "icon": "❤️"
+        }
+      ],
+      "paragraphs": [
+        "Unsere Philosophie ist einfach: Jeder Gast ist famiglia. In unserem Restaurant verschmelzen die authentischen Aromen Italiens mit der Wärme echter Gastfreundschaft. Wir glauben daran, dass ein perfektes Essen mehr ist als nur Nahrung - es sind Momente der Freude, Gespräche, die bis spät in die Nacht dauern, und Erinnerungen fürs Leben.",
+        "Jeden Morgen bereiten wir unsere Pasta frisch zu, verwenden nur die besten regionalen Zutaten und kochen mit der Leidenschaft, die uns von Nonno Giuseppe vererbt wurde. Denn wahre italienische Küche entsteht nicht nur durch Rezepte, sondern durch amore - die Liebe zum Detail und zu unseren Gästen."
+      ],
+      "features": [
+        {
+          "title": "Marco Rossi - Küchenchef",
+          "description": "Als Enkel des Gründers führt Marco die kulinarischen Traditionen der Familie fort. Seine Leidenschaft für authentische italienische Küche und seine 25-jährige Erfahrung machen jedes Gericht zu einem Erlebnis."
+        },
+        {
+          "title": "Sofia Rossi - Gastgeberin",
+          "description": "Sofia sorgt dafür, dass sich jeder Gast wie zu Hause fühlt. Mit ihrer herzlichen Art und ihrem Gespür für Details schafft sie die warme Atmosphäre, für die das Bella Vista berühmt ist."
+        }
+      ]
+    },
+    "cta": {
+      "text": "Tisch reservieren",
+      "action": "book-now"
+    }
+  },
+  {
+    "sectionId": "contact",
+    "type": "form",
+    "headline": "Reservieren Sie Ihren Tisch für ein unvergessliches Geschmackserlebnis",
+    "subheadline": "Lassen Sie sich von drei Generationen italienischer Kochkunst verwöhnen. Wir freuen uns auf Ihren Besuch in unserem gemütlichen Restaurant.",
+    "content": {
+      "items": [
+        {
+          "title": "Kontaktformular",
+          "description": "Teilen Sie uns Ihre Wünsche mit - ob Tischreservierung, private Feier oder einfach eine Frage zu unseren hausgemachten Spezialitäten. Wir antworten innerhalb von 2 Stunden.",
+          "icon": "form"
+        }
+      ],
+      "paragraphs": [
+        "**Bella Vista Restaurant**\nVia Roma 42, 10123 Torino\nTelefon: +39 011 123 4567",
+        "**Öffnungszeiten:**\nMontag - Donnerstag: 12:00 - 14:30 & 18:00 - 22:30\nFreitag - Sonntag: 12:00 - 23:00\nDienstag Ruhetag"
+      ]
+    },
+    "cta": {
+      "text": "Nachricht senden",
+      "action": "contact"
+    }
+  }
+]

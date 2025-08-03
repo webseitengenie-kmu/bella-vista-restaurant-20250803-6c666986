@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bella Vista Restaurant - Gastronomie</title>
+    <meta name="description" content="Traditionelle italienische Familienrezepte seit 3 Generationen mit frischen regionalen Zutaten in authentischer gemütlicher Atmosphäre">
+    <meta name="keywords" content="Bella Vista Restaurant, Gastronomie, Authentische Familiengeschichte und Tradition hervorheben, Frische und Qualität der Zutaten visualisieren, Gemütliche Atmosphäre und italienisches Ambiente zeigen">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  </head>
+  <body class="bg-background text-text font-primary antialiased">
+    <header class="w-full z-50 relative">
+      <nav class="container mx-auto flex items-center justify-between py-6 px-4 sm:px-8">
+        <a href="#hero" class="text-xl font-bold text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'});return false;" data-editable="nav-logo" data-type="text">Bella Vista</a>
+        <ul class="flex gap-6 text-base font-medium">
+          <li><a href="#hero" class="hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'});return false;" data-editable="nav-hero" data-type="text">Start</a></li>
+          <li><a href="#services" class="hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'});return false;" data-editable="nav-services" data-type="text">Spezialitäten</a></li>
+          <li><a href="#about" class="hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});return false;" data-editable="nav-about" data-type="text">Über uns</a></li>
+          <li><a href="#contact" class="hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;" data-editable="nav-contact" data-type="text">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer class="bg-neutral text-text py-8 mt-16 border-t border-neutral-200">
+      <div class="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-sm font-medium" data-editable="footer-copyright" data-type="text">&copy; 2025 Bella Vista Restaurant</div>
+        <div class="flex gap-4 text-sm">
+          <a href="/impressum" class="hover:text-primary underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" data-editable="footer-impressum" data-type="text">Impressum</a>
+          <a href="/datenschutz" class="hover:text-primary underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" data-editable="footer-datenschutz" data-type="text">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/main.js"></script>
+    <script>
+      // Editor Support
+      if (window.location.search.includes('webseitengenie_editor=true')) {
+        document.body.classList.add('editor-mode');
+      }
+    </script>
+  
+<!-- Webseitengenie Editor Support -->
+<script>
+(function() {
+  // Only activate in editor mode
+  if (!window.location.search.includes('webseitengenie_editor=true')) return;
+  
+  // Store original content
+  const originalContent = new Map();
+  
+  // Listen for editor messages
+  window.addEventListener('message', function(event) {
+    if (event.source !== window.parent) return;
+    
+    const { type, elementId, content } = event.data;
+    
+    if (type === 'update-preview') {
+      const element = document.querySelector('[data-editable="' + elementId + '"]');
+      if (!element) return;
+      
+      // Store original
+      if (!originalContent.has(elementId)) {
+        originalContent.set(elementId, element.innerHTML);
+      }
+      
+      // Update with animation
+      element.style.transition = 'all 0.3s ease';
+      element.innerHTML = content;
+      element.style.backgroundColor = '#fef3c7';
+      
+      setTimeout(() => {
+        element.style.backgroundColor = '';
+      }, 300);
+    }
+    
+    if (type === 'restore-original') {
+      originalContent.forEach((content, id) => {
+        const el = document.querySelector('[data-editable="' + id + '"]');
+        if (el) el.innerHTML = content;
+      });
+    }
+  });
+  
+  // Signal ready
+  window.parent.postMessage({ type: 'preview-ready' }, '*');
+})();
+</script>
+</body>
+</html>

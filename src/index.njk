@@ -1,0 +1,155 @@
+---
+layout: base.njk
+---
+
+<!-- HERO SECTION -->
+<section id="hero" class="relative min-h-[70vh] flex flex-col justify-center items-center bg-gradient-to-br from-primary to-secondary text-white py-20 px-4 sm:px-8 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <svg class="absolute top-0 left-0 w-48 h-48 opacity-20" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="100" fill="#f39200" />
+    </svg>
+    <svg class="absolute bottom-0 right-0 w-64 h-64 opacity-15" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="300" height="300" rx="120" fill="#f7f7fa" />
+    </svg>
+  </div>
+  <div class="relative z-10 max-w-3xl text-center">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-4 font-secondary drop-shadow-lg" data-editable="hero-headline" data-type="text">Italienische Küche mit Herz im Bella Vista</h1>
+    <h2 class="text-xl sm:text-2xl lg:text-3xl font-light leading-relaxed mb-8 font-primary" data-editable="hero-subheadline" data-type="text">Familientradition und kulinarische Exzellenz seit Generationen – mitten in München.</h2>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#contact" class="bg-accent hover:bg-primary text-white font-bold py-4 px-8 rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;" data-editable="hero-cta-primary" data-type="text">Tisch reservieren</a>
+      <a href="#services" class="bg-white/20 hover:bg-accent text-white font-semibold py-4 px-8 rounded-lg border border-white/40 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'});return false;" data-editable="hero-cta-secondary" data-type="text">Speisekarte entdecken</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: HERO SPLIT CONTENT -->
+<section id="hero" class="relative bg-white py-16 px-4 sm:px-8">
+  <div class="container mx-auto max-w-5xl grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4 font-secondary leading-tight" data-editable="hero-headline2" data-type="text">Benvenuti in famiglia – Wo Italien zu Hause ist</h2>
+      <h3 class="text-lg sm:text-xl font-light text-secondary mb-6" data-editable="hero-subheadline2" data-type="text">Seit drei Generationen verwöhnen wir Sie mit authentischen Familienrezepten und der Herzlichkeit Italiens</h3>
+      <ul class="space-y-8">
+        <li>
+          <h4 class="text-xl font-semibold text-accent mb-2 font-primary" data-editable="hero-item1-headline" data-type="text">Tradizione di famiglia</h4>
+          <p class="text-base font-medium text-text leading-relaxed" data-editable="hero-item1-description" data-type="text">Unsere Nonna Maria brachte 1952 ihre geheimen Rezepte aus der Toskana mit nach Deutschland. Heute kochen wir noch immer nach ihren handgeschriebenen Notizen – mit Liebe, Leidenschaft und den besten regionalen Zutaten.</p>
+        </li>
+        <li>
+          <h4 class="text-xl font-semibold text-accent mb-2 font-primary" data-editable="hero-item2-headline" data-type="text">Ihr Platz am Familientisch</h4>
+          <p class="text-base font-medium text-text leading-relaxed" data-editable="hero-item2-description" data-type="text">In unserem gemütlichen Restaurant mit authentischem italienischen Flair erleben Sie mehr als nur ein Dinner – Sie werden Teil unserer großen italienischen Familie und genießen Momente, die das Herz berühren.</p>
+        </li>
+      </ul>
+      <a href="#contact" class="mt-8 inline-block bg-primary hover:bg-accent text-white font-bold py-3 px-7 rounded-lg shadow-lg hover:scale-105 transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;" data-editable="hero-cta2" data-type="text">Tisch reservieren</a>
+    </div>
+    <div class="relative hidden md:block">
+      <svg class="absolute top-8 left-8 w-48 h-48 opacity-10" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="100" cy="100" r="100" fill="#f39200" />
+      </svg>
+      <svg class="absolute bottom-4 right-4 w-32 h-32 opacity-20" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="128" height="128" rx="64" fill="#007bff" />
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: SERVICES GRID -->
+<section id="services" class="relative bg-neutral py-20 px-4 sm:px-12 overflow-hidden">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4 font-secondary text-center leading-tight" data-editable="services-headline" data-type="text">Unsere Spezialitäten – Italienische Leidenschaft auf dem Teller</h2>
+    <h3 class="text-lg sm:text-xl font-light text-secondary mb-10 text-center" data-editable="services-subheadline" data-type="text">Entdecken Sie die kulinarischen Schätze unserer Familie: Von handgemachter Pasta bis hin zu verführerischen Dolci – jedes Gericht erzählt eine Geschichte aus drei Generationen italienischer Kochkunst.</h3>
+    <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      <li class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-accent">
+        <h4 class="text-xl font-semibold text-accent mb-2 font-primary" data-editable="services-item1-headline" data-type="text">Hausgemachte Pasta</h4>
+        <p class="text-base font-medium text-text" data-editable="services-item1-description" data-type="text">Täglich frisch zubereitete Pasta nach Nonnas geheimen Familienrezepten – von cremiger Carbonara bis zur würzigen Arrabbiata.</p>
+      </li>
+      <li class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-accent">
+        <h4 class="text-xl font-semibold text-accent mb-2 font-primary" data-editable="services-item2-headline" data-type="text">Steinofen-Pizza</h4>
+        <p class="text-base font-medium text-text" data-editable="services-item2-description" data-type="text">Knuspriger Teig aus 48-Stunden-Fermentation, belegt mit italienischen Zutaten und gebacken bei 450°C im traditionellen Steinofen.</p>
+      </li>
+      <li class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-accent">
+        <h4 class="text-xl font-semibold text-accent mb-2 font-primary" data-editable="services-item3-headline" data-type="text">Erlesene Weine</h4>
+        <p class="text-base font-medium text-text" data-editable="services-item3-description" data-type="text">Handverlesene italienische Weine von kleinen Familienbetrieben – perfekt abgestimmt auf unsere Gerichte für unvergessliche Geschmackserlebnisse.</p>
+      </li>
+      <li class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-accent">
+        <h4 class="text-xl font-semibold text-accent mb-2 font-primary" data-editable="services-item4-headline" data-type="text">Dolci & Desserts</h4>
+        <p class="text-base font-medium text-text" data-editable="services-item4-description" data-type="text">Verführerische Süßspeisen wie cremiges Tiramisu und sizilianische Cannoli – der perfekte Abschluss für Ihren kulinarischen Italienurlaub.</p>
+      </li>
+      <li class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-accent">
+        <h4 class="text-xl font-semibold text-accent mb-2 font-primary" data-editable="services-item5-headline" data-type="text">Event-Catering</h4>
+        <p class="text-base font-medium text-text" data-editable="services-item5-description" data-type="text">Bringen Sie Italien zu Ihrem Event: Authentische Buffets und Menüs für Firmenevents, Hochzeiten und private Feiern.</p>
+      </li>
+    </ul>
+    <div class="flex justify-center">
+      <a href="#contact" class="bg-primary hover:bg-accent text-white font-bold py-4 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;" data-editable="services-cta" data-type="text">Jetzt reservieren</a>
+    </div>
+  </div>
+  <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-neutral to-transparent pointer-events-none"></div>
+</section>
+
+<!-- SECTION 3: ABOUT SPLIT TIMELINE -->
+<section id="about" class="relative py-20 px-4 sm:px-12 bg-gradient-to-br from-accent/20 via-white to-primary/10 overflow-hidden">
+  <div class="container mx-auto max-w-5xl">
+    <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4 font-secondary text-center leading-tight" data-editable="about-headline" data-type="text">Drei Generationen italienische Leidenschaft</h2>
+    <h3 class="text-lg sm:text-xl font-light text-secondary mb-12 text-center" data-editable="about-subheadline" data-type="text">Seit 1952 verwöhnen wir Sie mit authentischen Familienrezepten und der Herzlichkeit Italiens - mitten in Deutschland</h3>
+    <ul class="relative border-l-4 border-accent pl-8 space-y-12 max-w-3xl mx-auto">
+      <li class="relative">
+        <span class="absolute -left-5 top-2 w-4 h-4 bg-accent rounded-full border-2 border-white"></span>
+        <h4 class="text-xl font-semibold text-accent mb-2 font-primary" data-editable="about-item1-headline" data-type="text">1952 - Der Traum beginnt</h4>
+        <p class="text-base font-medium text-text" data-editable="about-item1-description" data-type="text">Nonno Giuseppe verlässt seine Heimat in der Toskana und bringt die Geheimnisse seiner famiglia nach Deutschland. Mit nur einer Handvoll Goldmünzen und den wertvollsten Familienrezepten im Gepäck eröffnet er das erste Bella Vista.</p>
+      </li>
+      <li class="relative">
+        <span class="absolute -left-5 top-2 w-4 h-4 bg-accent rounded-full border-2 border-white"></span>
+        <h4 class="text-xl font-semibold text-accent mb-2 font-primary" data-editable="about-item2-headline" data-type="text">1978 - Die Tradition wächst</h4>
+        <p class="text-base font-medium text-text" data-editable="about-item2-description" data-type="text">Papà Marco übernimmt das Restaurant und erweitert es um die berühmte Steinofenpizza. Die Gäste lieben nicht nur das Essen, sondern die warme Atmosphäre, in der sich jeder wie Familie fühlt.</p>
+      </li>
+      <li class="relative">
+        <span class="absolute -left-5 top-2 w-4 h-4 bg-accent rounded-full border-2 border-white"></span>
+        <h4 class="text-xl font-semibold text-accent mb-2 font-primary" data-editable="about-item3-headline" data-type="text">Heute - Moderne trifft Tradition</h4>
+        <p class="text-base font-medium text-text" data-editable="about-item3-description" data-type="text">Wir, die dritte Generation, führen das Erbe fort: Täglich frische Pasta, sorgfältig ausgewählte regionale Zutaten und die italienische Gastfreundschaft, die unsere Gäste seit über 70 Jahren verzaubert.</p>
+      </li>
+    </ul>
+    <div class="flex justify-center mt-12">
+      <a href="#contact" class="bg-primary hover:bg-accent text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;" data-editable="about-cta" data-type="text">Tisch reservieren</a>
+    </div>
+  </div>
+  <svg class="absolute right-0 top-0 w-48 h-48 opacity-20" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="100" cy="100" r="100" fill="#007bff" /></svg>
+  <svg class="absolute left-0 bottom-0 w-60 h-60 opacity-10" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="240" height="240" rx="120" fill="#f39200" /></svg>
+</section>
+
+<!-- SECTION 4: CONTACT FORM -->
+<section id="contact" class="relative py-24 px-4 sm:px-8 bg-white overflow-hidden">
+  <div class="container mx-auto max-w-4xl bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl p-10 md:p-16">
+    <h2 class="text-2xl sm:text-3xl font-bold text-primary mb-4 font-secondary text-center" data-editable="contact-headline" data-type="text">Reservieren Sie Ihren Tisch für ein unvergessliches Geschmackserlebnis</h2>
+    <h3 class="text-lg sm:text-xl font-light text-secondary mb-8 text-center" data-editable="contact-subheadline" data-type="text">Lassen Sie sich von drei Generationen italienischer Kochkunst verwöhnen. Wir freuen uns auf Ihren Besuch in unserem gemütlichen Restaurant.</h3>
+    <ul class="mb-10">
+      <li>
+        <h4 class="text-lg font-semibold text-accent mb-2 font-primary" data-editable="contact-item1-headline" data-type="text">Kontaktformular</h4>
+        <p class="text-base font-medium text-text" data-editable="contact-item1-description" data-type="text">Teilen Sie uns Ihre Wünsche mit - ob Tischreservierung, private Feier oder einfach eine Frage zu unseren hausgemachten Spezialitäten. Wir antworten innerhalb von 2 Stunden.</p>
+      </li>
+    </ul>
+    <form class="contact-form space-y-6" action="#" method="POST" autocomplete="off" novalidate aria-label="Kontaktformular">
+      <div class="form-group">
+        <label for="name" class="block text-sm font-medium text-text mb-1" data-editable="contact-label-name" data-type="text">Name *</label>
+        <input type="text" id="name" name="name" required aria-required="true" class="w-full rounded-lg border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition shadow-sm" autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="email" class="block text-sm font-medium text-text mb-1" data-editable="contact-label-email" data-type="text">E-Mail *</label>
+        <input type="email" id="email" name="email" required aria-required="true" class="w-full rounded-lg border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition shadow-sm" autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="phone" class="block text-sm font-medium text-text mb-1" data-editable="contact-label-phone" data-type="text">Telefon</label>
+        <input type="tel" id="phone" name="phone" class="w-full rounded-lg border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition shadow-sm" autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label for="message" class="block text-sm font-medium text-text mb-1" data-editable="contact-label-message" data-type="text">Nachricht *</label>
+        <textarea id="message" name="message" rows="5" required aria-required="true" class="w-full rounded-lg border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition shadow-sm resize-vertical" autocomplete="off"></textarea>
+      </div>
+      <div class="form-group" style="display: none;">
+        <input type="text" name="honey" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit" class="submit-button bg-primary hover:bg-accent text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" data-editable="contact-cta" data-type="text">Nachricht senden</button>
+      <div class="form-feedback text-accent text-center text-sm mt-4 hidden" aria-live="polite"></div>
+    </form>
+  </div>
+  <svg class="absolute -z-10 right-0 top-0 w-64 h-64 opacity-10 pointer-events-none" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="128" cy="128" r="128" fill="#007bff" /></svg>
+  <svg class="absolute -z-10 left-0 bottom-0 w-48 h-48 opacity-20 pointer-events-none" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="100" cy="100" r="100" fill="#f39200" /></svg>
+</section>
